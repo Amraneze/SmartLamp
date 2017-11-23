@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartLamp</string>
+    <string name="btStatusConnecting">Connecting</string>
+    <string name="btStatusConnected">Connected</string>
+    <string name="btStatusDisconnected">Disconnected</string>
+    <string name="lightOff">LightOff</string>
+    <string name="lightOn">LightOn</string>
+</resources>

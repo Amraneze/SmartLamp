@@ -1,0 +1,14 @@
+http://blog.kevindoran.co/bluetooth-programming-with-python-3/
+https://raspberrypi.stackexchange.com/questions/47055/using-python-with-bluetooth-on-raspberry-pi-3
+http://blog.davidvassallo.me/2014/05/11/android-linux-raspberry-pi-bluetooth-communication/
+https://www.raspberrypi.org/magpi/create-a-raspberry-pi-3-bluetooth-tag/
+https://raspberrypi.stackexchange.com/questions/72210/raspberry-pi-3-bluetooth-programming-with-python
+https://www.element14.com/community/thread/57001/l/raspberry-pi-3-on-board-bluetooth-programming?displayFullThread=true
+https://raspberrypi.stackexchange.com/questions/45246/bluetooth-import-for-python-raspberry-pi-3
+https://raspberrypi.stackexchange.com/questions/24028/using-python-with-bluetooth-to-communicate
+https://github.com/EnableTech/raspberry-bluetooth-demo
+
+
+demo
+https://ctejas.wordpress.com/2016/05/20/home-automation-2-rpibluetoothandroid/
+
