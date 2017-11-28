@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">SmartLamp</string>
+    <string name="btStatusConnecting">Connecting</string>
+    <string name="btStatusConnected">Connected</string>
+    <string name="btStatusDisconnected">Disconnected</string>
+    <string name="lightOff">LightOff</string>
+    <string name="lightOn">LightOn</string>
+    <string name="settings_bewellmobile_version">BewellConnectMobile_%1$s</string>
+    <string name="device_myscale">MyScale</string>
+    <string name="device_mytensio">MyTensio</string>
+    <string name="device_mytensio_with_battery">MyTensio %1$s</string>
+    <string name="measurement_list_myscale">Poids</string>
+    <string name="measurement_list_mytensio">Tension artérielle</string>
+    <string name="scanning">Scanning</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="splash_screen_info">Votre assistant\npersonnel de santé</string>
+
+    <string name="settings_general">General</string>
+    <string name="settings_notification">Notification</string>
+    <string name="settings_general_version">Version </string>
+    <string name="settings_general_emei">EMEI</string>
+    <string name="settings_general_ip">IP:</string>
+    <string name="settings_general_phone_delay">Téléphone - Délai de mise en veille</string>
+    <string name="settings_general_phone_delay_5s">5 s.</string>
+    <string name="settings_general_phone_delay_30s">30 s.</string>
+    <string name="settings_general_phone_delay_1min">1 min.</string>
+    <string name="settings_general_phone_delay_never">Jamais</string>
+    <string name="settings_general_data_notification">Signal sonore pour les données</string>
+
+    <string name="phone_status">Etat : %1$s</string>
+    <string name="phone_scann">, Scanne : %1$s</string>
+    <string name="phone_is_scanning">En cours</string>
+    <string name="phone_is_not_scanning">Arrêté</string>
+    <string name="phone_network_status">Réseau : %1$s</string>
+    <string name="phone_wifi_title">Wifi</string>
+    <string name="phone_mobile_title">2G, 3G, 4G, 4G+</string>
+    <string name="phone_bluetooth_title">Bluetooth</string>
+    <string name="phone_server_title">Server</string>
+    <string name="phone_update_title">Mise à jour</string>
+    <string name="phone_update_message">Dernière version installée</string>
+    <string name="phone_update_needed_message">La nouvelle version %1$s existe</string>
+
+    <string name="settings_general_on">ON</string>
+    <string name="settings_general_off">OFF</string>
+
+    <string name="settings_general_activated">Activer</string>
+    <string name="settings_general_deactivated">désactiver</string>
+
+    <string name="settings_general_connection_notification">Connexion d\'un appareil</string>
+    <string name="settings_general_connection_notification_message">Vous confirme la connexion de\nl\'appareil à votre téléphone</string>
+
+    <string name="settings_general_battery_low_notification">Batterie faible</string>
+    <string name="settings_general_battery_low_notification_message">Vous prévient quand votre appareil\nn\'a plus suffisamment de batterie</string>
+
+    <string name="settings_general_server_notification">Envoi de la mesure</string>
+    <string name="settings_general_server_notification_message">Vous confirme l\'envoi du\nrésultat de votre mesure</string>
+
+    <string name="settings_general_bluetooth_failed_notification">Echec de connexion d’un appareil</string>
+    <string name="settings_general_bluetooth_failed_notification_message">Vous prévient quand l\'appareil n\'a pas réussi à se connecter à votre téléphone</string>
+
+    <string name="settings_general_measurement_failed_notification">Echec de la mesure</string>
+    <string name="settings_general_measurement_failed_notification_message">Vous prévient quand le résultat de\nvotre mesure n\'a pas pu être récupéré</string>
+
+    <string name="settings_general_measurement_received_notification">Récupération de la mesure</string>
+    <string name="settings_general_measurement_received_notification_message">Vous confirme la récupération du\nrésultat de votre mesure</string>
+
+    <string name="settings_general_copyright">2017 BewellConnect Mobile, Inc.\nAll right reserved</string>
+
+    <string name="menu_paired_devices">Appareils appairés</string>
+    <string name="menu_log_measurements">Journal des measures</string>
+    <string name="menu_log_phone">Activité du téléphone</string>
+    <string name="menu_phone_status">Etat du télephone</string>
+    <string name="menu_settings">Paramètres</string>
+
+    <string name="menu_filter_by_date">Trier par date</string>
+    <string name="menu_filter_by_type">Trier par type</string>
+    <string name="menu_filter_by_status">Trier par état</string>
+
+    <string name="device_title">%1$s</string>
+
+    <string name="dialog_button_yes">Oui</string>
+    <string name="dialog_button_no">Non</string>
+    <string name="dialog_unpair_device_title">Supprimer</string>
+    <string name="dialog_unpair_device_message">Êtes-vous sûr de vouloir\nsupprimer cet appareil ?</string>
+    <string name="dialog_mam_message">Quelle mode voulez-vous choisir\npour cet appareil ?</string>
+
+    <string name="service_foreground_is_running">Service is running</string>
+    <string name="service_foreground_sticker">Running</string>
+
+    <string name="pulse_unit">bpm</string>
+    <string name="sys_dia_unit">mmHg</string>
+    <string name="weight_unit">Kg</string>
+
+    <string name="sys_dia">SYS/DIA: %1$d/%2$d mmHg</string>
+    <string name="pulse">Pulse: %1$d bpm</string>
+    <string name="weight">Weight: %1$s Kg</string>
+
+    <string name="mytensio_measurement_sys_dia">%1$d/%2$d mmHg</string>
+    <string name="mytensio_measurement_pulse">%1$d Bpm</string>
+
+    <string name="mytensio_measurement_result">%1$d/%2$d mmHg - %3$d Bpm</string>
+    <string name="myscale_measurement_result">%1$s Kg</string>
+
+    <string name="device_connection">Connecté</string>
+    <string name="device_disconnected">Déconnecté</string>
+
+    <string name="battery_is_charging">Battery is charging</string>
+    <string name="battery_is_full">Battery is full</string>
+    <string name="battery_level_below_5">Battery is below 5%</string>
+    <string name="battery_level_below_10">Battery is below 10%</string>
+    <string name="battery_level_below_15">Battery is below 15%</string>
+
+    <string name="loading_device">Recherche de périphériques Bluetooth</string>
+    <string name="no_measurement">Aucune mesure\nn\'a été enregistrée</string>
+    <string name="measurement_was_deleted">Aucune mesure\nen attente de transmission</string>
+    <string name="no_measurement_button">Ajouter un appareil</string>
+    <string name="no_paired_device">Aucun appareil\nn\'est appairé</string>
+
+    <string name="log_measurement_failed">Sync failed of %1$s with status %2$s</string>
+    <string name="log_measurement_successed">Sync succeed of %1$s with status %2$d</string>
+    <string name="log_measurement_error">Sync error of %1$s with message %2$s</string>
+
+    <string name="log_network_disconnected">Disconnected from network</string>
+    <string name="log_network_connected">Connected to %1$s</string>
+
+    <string name="log_bluetooth_deactivated">Bluetooth is Deactivated</string>
+    <string name="log_bluetooth_activated">Bluetooth is Activated</string>
+
+    <string name="bpm_dialog_single_mode_button">Single</string>
+    <string name="bpm_dialog_mam_button">MAM</string>
+
+    <string name="general_seconds">secondes</string>
+
+    <string name="measurement_result_title">Résultat de la measure %1$s</string>
+    <string name="measurement_result">Résultat</string>
+    <string name="measurement_wait">Veuillez patienter</string>
+    <string name="measurement_in_progress_mam">Mesure %1$s en cours...</string>
+    <string name="measurement_started_after_mam">Début de la mesure %1$s dans</string>
+    <string name="measurement_started_after_single">Début de la mesure dans</string>
+    <string name="measurement_mam_failed">Echec de la mesure %1$s/3</string>
+    <string name="measurement_failed">Echec de la mesure</string>
+    <string name="measurement_in_progress">Mesure en cours...</string>
+    <string name="measurement_mam_3">%1$d/3</string>
+
+    <string name="snackbar_unpaired_device_title">Appareil supprimé</string>
+    <string name="snackbar_unpaired_device_message">L\'appareil a été supprimé avec succés.</string>
+
+    <string name="snackbar_paired_device_title">Appareil ajouté</string>
+    <string name="snackbar_paired_device_message">L\'appareil a été appairé avec succés.</string>
+
+    <string name="shutdown_phone">Phone is shutting down</string>
+    <string name="myscale_measurement_log">Measurement of MyScale</string>
+    <string name="mytensio_measurement_log">Measurement received of MyTensio</string>
+    <string name="mytensio_measurement_failed_log">Measurement failed</string>
+    <string name="mytensio_low_battery_log">The battery is low</string>
+    <string name="no_measurement_received">No Measurement Received from %1$s with Mac %2$s</string>
+    <string name="measurement_failed_">Measurement Failed from %1$s with Mac %2$s</string>
+    <string name="device_connected_log">%1$s is connected with MAC: %2$s</string>
+    <string name="device_disconnected_log">%1$s is disconnected with MAC: %2$s</string>
+    <string name="phone_information_log">%1$s, signal %2$s dBm</string>
+    <string name="phone_network_log">Réseau %1$s</string>
+
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="no_update_available">No update available</string>
+    <string name="update_failed">Download update failed</string>
+    <string name="sync_failed">Synchronization failed</string>
+    <string name="sync_succeed">Synchronization succeed</string>
+
+
+    <string name="notification_content_name">Device\'s name: %1$s</string>
+    <string name="notification_content_mac">Mac: %1$s</string>
+    <string name="notification_content_date">Time: %1$s</string>
+    <!-- Change successed to succeed-->
+    <string name="notification_server_succeed">Success</string>
+    <string name="notification_server_successed_title">Measurement sent to the server</string>
+    <string name="notification_server_successed_message">The server received the measurement with success</string>
+    <string name="notification_server_successed_myscale_content">The measurement from MyScale was sent to the server</string>
+
+    <string name="notification_server_failed">Error</string>
+    <string name="notification_server_failed_title">Measurement not sent to the server</string>
+    <string name="notification_server_failed_myscale_content">The measurement from MyScale was not sent to the server</string>
+    <string name="notification_server_failed_mytensio_content">The measurement from MyTensio was not sent to the server</string>
+
+    <string name="notification_device_connected_title">Device Connected</string>
+    <string name="notification_device_connected_message">We connected with device</string>
+
+    <string name="notification_device_disconnected_title">Device Disconnected</string>
+    <string name="notification_device_disconnected_message">We disconnected with device</string>
+
+    <string name="notification_device_gatt_failed_title">Connection Problem</string>
+    <string name="notification_device_gatt_failed_message">There was a problem with the device</string>
+
+    <string name="notification_measurement_failed_title">Measurement Failed</string>
+    <string name="notification_measurement_failed_message">The measurement was failed</string>
+    <string name="notification_measurement_failed_content">Please retake the measurement and make sure your device is turned on</string>
+
+    <string name="notification_measurement_received_title">Measurement Received</string>
+    <string name="notification_measurement_received_message">We recieved a measurement</string>
+
+    <string name="notification_low_battery_title">Low Battery</string>
+    <string name="notification_low_battery_message">Your device\'s battery is low</string>
+    <string name="notification_low_battery_content">Please make sure to charge your device before taking a measurement</string>
+
+
+    <string name="updating_application">Updating the application from %1$s to %2$s</string>
+
+    <string name="ble_gatt_error_08">BLE Connection Timeout</string>
+    <string name="ble_gatt_error_62">BLE Connection Failed To Be Established</string>
+    <string name="ble_gatt_error_133">BLE GATT Error</string>
+</resources>

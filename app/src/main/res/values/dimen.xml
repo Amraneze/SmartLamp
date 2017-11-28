@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="snackbar_title">18sp</dimen>
+    <dimen name="snackbar_message">13sp</dimen>
+    <dimen name="result_size">60sp</dimen>
+
+</resources>

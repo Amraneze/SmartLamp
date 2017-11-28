@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommonTextView">
+        <attr name="font_style">
+            <enum name="open_sans_bold" value="0"/>
+            <enum name="open_sans_bold_italic" value="1"/>
+            <enum name="open_sans_extra_bold" value="2"/>
+            <enum name="open_sans_extra_bold_italic" value="3"/>
+            <enum name="open_sans_italic" value="4"/>
+            <enum name="open_sans_light" value="5"/>
+            <enum name="open_sans_light_italic" value="6"/>
+            <enum name="open_sans_regular" value="7"/>
+            <enum name="open_sans_semi_bold" value="8"/>
+            <enum name="open_sans_semi_bold_italic" value="9"/>
+        </attr>
+        <attr name="custom_color" format="color"/>
+    </declare-styleable>
+
+</resources>

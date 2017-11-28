@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/common_blue</item>
+        <item name="colorPrimaryDark">@color/common_blue</item>
+        <item name="colorAccent">@color/grey_date</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="ScanningCircularProgress" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@android:color/white</item>
+    </style>
+
+    <style name="Button.Navigation" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">52dp</item>
+    </style>
+
+    <style name="Settings.RadioGroup" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/grey_text</item>
+        <item name="colorControlActivated">@color/blue_radiogroup</item>
+        <item name="android:color">@color/blue_radiogroup</item>
+        <item name="android:tint">@color/blue_radiogroup</item>
+        <item name="custom_color">@color/grey_text</item>
+    </style>
+
+
+    <style name="CommonButton">
+        <item name="android:background">@drawable/button_round_corners</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

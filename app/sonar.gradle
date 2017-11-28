@@ -1,0 +1,20 @@
+apply plugin: 'org.sonarqube'
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "BeWellMobile-Android"
+        property "sonar.projectKey", "BeWellMobile-Android"
+        property "sonar.projectVersion", project.versionName+"("+project.versionCode+")"
+
+        property "sonar.sources", "src/main/java/fr/visiomed"
+        property "sonar.language", "java"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.java.source", "1.7"
+        property "sonar.report.export.path", "sonar-report.json"
+        property "sonar.host.url", "http://localhost:9000/"
+        property "sonar.login", "admin"
+        property "sonar.password", "admin"
+
+        property "sonar.import_all_files", "true"
+    }
+}

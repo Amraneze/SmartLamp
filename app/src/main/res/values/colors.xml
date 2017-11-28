@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="main_color">#ff9a00</color>
+    <color name="secondary_color">#BDBDBD</color>
+
+    <color name="snack_success_color">#55E588</color>
+    <color name="snack_error_color">#D0021B</color>
+
+    <color name="common_blue">#00178a</color>
+    <color name="button_blue">#000C49</color>
+    <color name="grey_date">#858585</color>
+    <color name="grey_text">#4D4D4D</color>
+    <color name="grey_settings">#373737</color>
+    <color name="grey_translucent">#AAadadad</color>
+    <color name="waiting_color">#F15405</color>
+
+    <color name="blue_navigation_drawer">#5A75F9</color>
+    <color name="grey_ee">#EEEEEE</color>
+    <color name="blue_radiogroup">#2C3B88</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="black">#000000</color>
+</resources>

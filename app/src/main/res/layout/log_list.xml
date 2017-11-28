@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_log"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/iv_log_status">
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_log_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_style="open_sans_bold"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:textColor="@color/common_blue"
+            android:textSize="18sp" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_log_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_style="open_sans_regular"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_log_device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textColor="@color/grey_date"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:font_style="open_sans_semi_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_log_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_style="open_sans_semi_bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/grey_date"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_log_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_grading_normal" />
+
+</RelativeLayout>

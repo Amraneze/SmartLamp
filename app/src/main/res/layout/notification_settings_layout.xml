@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:id="@+id/ll_connection_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_connection_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_connection_notification"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_blue"
+                    android:textSize="18sp"
+                    app:font_style="open_sans_bold" />
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_connection_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_connection_notification_message"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey_date"
+                    android:textSize="13sp"
+                    app:font_style="open_sans_semi_bold" />
+
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_connection_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:kswAutoAdjustTextPosition="true"
+                app:kswBackDrawable="@drawable/alarm_switch_back"
+                app:kswTextOff="@string/settings_general_off"
+                app:kswTextOn="@string/settings_general_on"
+                app:kswThumbDrawable="@drawable/ic_switch"
+                app:kswThumbMarginTop="3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_server_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_server_notification"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_blue"
+                    android:textSize="18sp"
+                    app:font_style="open_sans_bold" />
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_server_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_server_notification_message"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey_date"
+                    android:textSize="13sp"
+                    app:font_style="open_sans_semi_bold" />
+
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_server_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:kswAutoAdjustTextPosition="true"
+                app:kswBackDrawable="@drawable/alarm_switch_back"
+                app:kswTextOff="@string/settings_general_off"
+                app:kswTextOn="@string/settings_general_on"
+                app:kswThumbDrawable="@drawable/ic_switch"
+                app:kswThumbMarginTop="3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_measurement_failed_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_measurement_failed_notification"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_blue"
+                    android:textSize="18sp"
+                    app:font_style="open_sans_bold" />
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_measurement_failed_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_measurement_failed_notification_message"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey_date"
+                    android:textSize="13sp"
+                    app:font_style="open_sans_semi_bold" />
+
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_measurement_failed_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:kswAutoAdjustTextPosition="true"
+                app:kswBackDrawable="@drawable/alarm_switch_back"
+                app:kswTextOff="@string/settings_general_off"
+                app:kswTextOn="@string/settings_general_on"
+                app:kswThumbDrawable="@drawable/ic_switch"
+                app:kswThumbMarginTop="3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_measurement_received_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_measurement_received_notification"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_blue"
+                    android:textSize="18sp"
+                    app:font_style="open_sans_bold" />
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_measurement_received_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_measurement_received_notification_message"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey_date"
+                    android:textSize="13sp"
+                    app:font_style="open_sans_semi_bold" />
+
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_measurement_received_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:kswAutoAdjustTextPosition="true"
+                app:kswBackDrawable="@drawable/alarm_switch_back"
+                app:kswTextOff="@string/settings_general_off"
+                app:kswTextOn="@string/settings_general_on"
+                app:kswThumbDrawable="@drawable/ic_switch"
+                app:kswThumbMarginTop="3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_battery_low_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_battery_low_notification"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_blue"
+                    android:textSize="18sp"
+                    app:font_style="open_sans_bold" />
+
+                <fr.simona.smartlamp.common.ui.CommonTextView
+                    android:id="@+id/tv_battery_low_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings_general_battery_low_notification_message"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey_date"
+                    android:textSize="13sp"
+                    app:font_style="open_sans_semi_bold" />
+
+            </LinearLayout>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_battery_low_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:kswAutoAdjustTextPosition="true"
+                app:kswBackDrawable="@drawable/alarm_switch_back"
+                app:kswTextOff="@string/settings_general_off"
+                app:kswTextOn="@string/settings_general_on"
+                app:kswThumbDrawable="@drawable/ic_switch"
+                app:kswThumbMarginTop="3dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

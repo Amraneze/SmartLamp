@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/common_blue"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:font_style="open_sans_semi_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:font_style="open_sans_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <fr.simona.smartlamp.common.ui.CommonButton
+            android:id="@+id/btn_positive_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_dialog_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/dialog_button_yes"
+            android:textColor="@color/common_blue" />
+
+        <fr.simona.smartlamp.common.ui.CommonButton
+            android:id="@+id/btn_negative_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_dialog_negative_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/dialog_button_no"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

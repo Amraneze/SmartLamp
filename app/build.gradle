@@ -1,0 +1,108 @@
+apply from: "sonar.gradle"
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'io.fabric'
+
+project.ext {
+    def versionPropsFile = file('..\\version.properties')
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        def code = versionProps['VERSION_CODE'].toInteger() + 1
+        versionProps['VERSION_CODE']=code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+        versionCode = code
+        versionName = "0.0.10"
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+}
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "fr.visiomed.bewellmobile"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode project.versionCode
+        versionName project.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            buildConfigField "String", "BASE_URL", "\"https://hbox-api.bewellconnect.fr/\""
+            buildConfigField "String", "AUTHORIZATION", "\"Basic dmlzaW9BZG1pbjpjQmsuNkRALQ==\""
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            buildConfigField "String", "BASE_URL", "\"https://hbox-api.bewellconnect.fr/\""
+            buildConfigField "String", "AUTHORIZATION", "\"Basic dmlzaW9BZG1pbjpjQmsuNkRALQ==\""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    /*android.applicationVariants.all { variant ->
+        def apk = variant.outputs[0].outputFile;
+        def newName = "BewellConnectMobile" + "-v" + android.defaultConfig.versionName + "-c" + android.defaultConfig.versionCode;
+        if (variant.buildType.name.toLowerCase() == "debug") {
+            newName += "-debug"
+        }
+        newName += ".apk"
+
+        variant.outputs[0].outputFile = new File(apk.parentFile, newName);
+        if (variant.outputs[0].zipAlign) {
+            variant.outputs[0].zipAlign.outputFile = new File(apk.parentFile, newName.replace("-unaligned", ""));
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'com.github.rey5137:material:1.2.1'
+    compile 'com.balysv.materialmenu:material-menu:2.0.0'
+    compile 'com.kyleduo.switchbutton:library:1.4.6'
+    //compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    testCompile 'junit:junit:4.12'
+}

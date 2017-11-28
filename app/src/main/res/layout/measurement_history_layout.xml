@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_device_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/iv_device_logo"
+        android:orientation="vertical">
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/common_blue"
+            android:textSize="18sp"
+            app:font_style="open_sans_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pulse:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:font_style="open_sans_semi_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_additional_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SYS/DIA:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:font_style="open_sans_semi_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="@color/grey_date"
+            android:textSize="13sp"
+            app:font_style="open_sans_semi_bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_uploading_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end"
+        android:background="@drawable/ic_uploading" />
+
+</RelativeLayout>

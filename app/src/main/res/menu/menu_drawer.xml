@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/paired_devices"
+            android:icon="@drawable/ic_drawer_paired_devices"
+            android:title="@string/menu_paired_devices" />
+
+        <item
+            android:id="@+id/log_measurements"
+            android:icon="@drawable/ic_drawer_log_measurements"
+            android:title="@string/menu_log_measurements" />
+
+        <item
+            android:id="@+id/log_phone"
+            android:icon="@drawable/ic_drawer_log_phone"
+            android:title="@string/menu_log_phone" />
+
+        <item
+            android:id="@+id/phone_status"
+            android:icon="@drawable/ic_drawer_phone_status"
+            android:title="@string/menu_phone_status" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/menu_settings" />
+    </group>
+</menu>

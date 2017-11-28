@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/navigation_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/device_mytensio"
+            android:textColor="@color/common_blue"
+            android:textSize="30sp"
+            app:font_style="open_sans_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_bluetooth_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_dote_green" />
+
+            <fr.simona.smartlamp.common.ui.CommonTextView
+                android:id="@+id/tv_device_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_connection"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp"
+                app:font_style="open_sans_semi_bold" />
+
+        </LinearLayout>
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="@string/measurement_result"
+            android:textColor="@color/common_blue"
+            android:textSize="30sp"
+            app:font_style="open_sans_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_measurement_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/bpm_dialog_mam_button"
+            android:textColor="@color/common_blue"
+            android:textSize="18sp"
+            app:font_style="open_sans_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_measurement_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="136/105 mmHg"
+            android:textColor="@color/common_blue"
+            android:textSize="30sp"
+            app:font_style="open_sans_bold" />
+
+        <fr.simona.smartlamp.common.ui.CommonTextView
+            android:id="@+id/tv_additional_measurement_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="80 Bpm"
+            android:textColor="@color/common_blue"
+            android:textSize="30sp"
+            app:font_style="open_sans_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <fr.simona.smartlamp.common.ui.CommonTextView
+                android:id="@+id/tv_result_of_measurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/measurement_result_title"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp"
+                app:font_style="open_sans_semi_bold" />
+
+            <fr.simona.smartlamp.common.ui.CommonTextView
+                android:id="@+id/tv_result_of_measurement_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:text="136/105 mmHg - 80 Bpm"
+                android:textColor="@color/common_blue"
+                android:textSize="18sp"
+                app:font_style="open_sans_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
