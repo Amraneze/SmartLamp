@@ -6,21 +6,36 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.wooplr.spotlight.SpotlightView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import fr.simona.smartlamp.R;
+import fr.simona.smartlamp.common.ui.CommonButton;
 
 /**
  * Created by Amrane Ait Zeouay on 26-Nov-17.
  */
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements HomeView {
+
+    private static final String INTRO_CARD = "rotation_intro";
+    private static final String INTRO_SWITCH_LIGHT = "switch_light_intro";
+
+    @BindView(R.id.btn_switch_light)
+    CommonButton btnSwitchLight;
+
     BluetoothService bleService;
     private String statusNotPressed = "0";
     private String statusPressed = "1";
@@ -28,12 +43,17 @@ public class HomeActivity extends AppCompatActivity {
     public final static String BUTTON_VALUE = "Button Value";
     private int pressed = 0;
     public String isConnected = "0";
+    private boolean isRevealEnabled = true;
+    private SpotlightView spotLight;
+
+    private HomePresenterN presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ButterKnife.bind(this);
+        presenter = new HomePresenterN(this);
         //creating a new intent to start a bluetooth service (blutoothService.java)
         // or can use intent.setClassName("com.tchafekar.helloworld", "com.tchafekar.helloworld.BluetoothService");
         Intent bleService = new Intent(this, BluetoothService.class);
@@ -48,10 +68,45 @@ public class HomeActivity extends AppCompatActivity {
 
         registerReceiver(mMessageReceiver, new IntentFilter(BluetoothService.RX_MSG));
         registerReceiver(mMessageReceiver, new IntentFilter(BluetoothService.CONNECT_STATUS));
-
     }
 
+    @Override
+    public void displayIntroScreen() {
+        showIntro(btnSwitchLight, INTRO_SWITCH_LIGHT);
+        showIntro(btnSwitchLight, INTRO_SWITCH_LIGHT);
+        Log.e("Amrane", "From here");
+        spotLight.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                Log.e("Amrane", "From touch");
+                return false;
+            }
+        });
+    }
 
+    private void showIntro(View view, String usageId) {
+        spotLight = new SpotlightView.Builder(this)
+                .introAnimationDuration(400)
+                .enableRevealAnimation(isRevealEnabled)
+                .performClick(true)
+                .fadeinTextDuration(400)
+                //.setTypeface(FontUtil.get(this, "RemachineScript_Personal_Use"))
+                .headingTvColor(Color.parseColor("#eb273f"))
+                .headingTvSize(32)
+                .headingTvText("Love")
+                .subHeadingTvColor(Color.parseColor("#ffffff"))
+                .subHeadingTvSize(16)
+                .subHeadingTvText("Like the picture?\nLet others know.")
+                .maskColor(Color.parseColor("#dc000000"))
+                .target(view)
+                .lineAnimDuration(400)
+                .lineAndArcColor(Color.parseColor("#eb273f"))
+                .dismissOnTouch(true)
+                .dismissOnBackPress(true)
+                .enableDismissAfterShown(true)
+                .usageId(usageId) //UNIQUE ID
+                .show();
+    }
 
     @Override
     public void onResume() {

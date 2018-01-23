@@ -29,18 +29,22 @@
             android:name="io.fabric.ApiKey"
             android:value="46bc718299a7293d9f7cac7d73ad3c753ee81b35" />
         <activity android:name=".intro.SplashScreenActivity">
-
-        </activity>
-
-        <activity android:name=".device.AddDeviceActivity" />
-
-        <activity android:name=".home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".device.AddDeviceActivity" />
+
+        <activity android:name=".home.HomeActivity">
+
+        </activity>
+
+        <activity android:name=".test.TestActivity">
+
         </activity>
 
         <service android:name=".home.BluetoothService"

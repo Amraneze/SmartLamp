@@ -221,5 +221,10 @@ public class MainActivity extends AppCompatActivity implements HomeView  {
         txt.setTextColor(ContextCompat.getColor(this, options.getTextColor()));
         snackbar.show();
     }
+
+    @Override
+    public void displayIntroScreen() {
+
+    }
 }
 

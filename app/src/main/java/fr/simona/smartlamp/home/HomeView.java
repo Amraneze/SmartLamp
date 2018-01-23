@@ -5,4 +5,5 @@ package fr.simona.smartlamp.home;
  */
 
 public interface HomeView {
+    void displayIntroScreen();
 }

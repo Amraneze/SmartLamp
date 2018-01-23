@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.UUID;
 import fr.simona.smartlamp.common.BasePresenter;
 import fr.simona.smartlamp.common.utils.BluetoothUtils;
+import fr.simona.smartlamp.common.utils.CommonUtils;
 
 /**
  * Created by Amrane Ait Zeouay on 26-Nov-17.
@@ -39,7 +40,10 @@ public class HomePresenter extends BasePresenter<HomeView> {
         super(context);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         mHandler = new Handler(Looper.getMainLooper());
-
+        if (!CommonUtils.isIntroScreenSeen(context)) {
+            Log.e("Amrane", "From here");
+            view.displayIntroScreen();
+        }
     }
 
     public void sendBtMsg(String msg2send){
